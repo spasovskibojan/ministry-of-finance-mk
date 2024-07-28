@@ -1,0 +1,78 @@
+.signInDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    margin-bottom: 70px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.signInDiv input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.buttonContainer button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonContainer button:first-of-type {
+    background-color: #007bff; /* Blue color for "Sign In" */
+}
+
+.buttonContainer button:nth-of-type(2) {
+    background-color: #28a745; /* Green color for "Register" */
+}
+
+.signInDiv button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signInDiv button:hover {
+    opacity: 0.9;
+}
+
+.googleButton {
+    background-color: #db4437 !important; /* Google red */
+}
+
+.title {
+    margin-top: 50px;
+    color: #004080;
+}
+
+@media (max-width: 500px) {
+    .signInDiv {
+        max-width: 250px;
+    }
+}

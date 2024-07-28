@@ -1,0 +1,61 @@
+.minister-profile {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-details {
+    flex: 1 1 auto;
+}
+
+.profile-details h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.profile-details p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.biography {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.biography p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+    }
+}

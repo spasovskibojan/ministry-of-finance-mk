@@ -1,0 +1,87 @@
+/* JobListing.module.css */
+
+.container {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 350px;
+}
+
+.innerContainer {
+    padding: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.textGray {
+    color: #718096;
+    margin: 0.5rem 0;
+}
+
+.heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.mb-5 {
+    margin-bottom: 1.25rem;
+}
+
+.button {
+    color: #004080;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+
+.salary {
+    color: #004080;
+    margin-bottom: 0.5rem;
+}
+
+.divider {
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 1.25rem;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.location {
+    color: #dd6b20;
+    margin-bottom: 0.75rem;
+    justify-items: center;
+}
+
+.mapMarker {
+    display: inline;
+    font-size: 1.125rem;
+    margin-right: 0.25rem;
+}
+
+.link {
+    height: 36px;
+    background-color: #004080;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #002c57;
+}

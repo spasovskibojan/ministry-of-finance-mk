@@ -1,0 +1,350 @@
+{
+  "statistics": [
+    {
+      "id": 1,
+      "title":{
+        "en" : "Citizen Budget",
+        "mk" : "Граѓански Буџет"
+      },
+      "description": {
+        "en" : "Citizen Budget is a web application that brings the budget closer to the citizens in a simple way, interactively informs them about how the budget is cut, how it is filled and how the allocated funds are spent.",
+        "mk" : "Граѓански Буџет е веб апликација која на едноставен начин го доближува буџетот до граѓаните, интерактивно ги информира за тоа како се крои буџетот, на кој начин се полни и како се трошат распределените средства."
+      },
+      "link": "http://budget.finance.gov.mk/"
+    },
+    {
+      "id": 2,
+      "title":{
+        "en" : "Open finance",
+        "mk" : "Отворени финансии"
+      },
+      "description": {
+        "en" : "The \"Open Finances\" portal aims to provide the public with an insight into the data on the realization of transactions of all budget users of the Budget of the Republic of North Macedonia, with which the Treasury of the Ministry of Finance has at its disposal.",
+        "mk" : "Порталот „Отворени финансии“ има за цел да и овозможи на јавноста увид во податоците за реализација на трансакции на сите буџетски корисници на Буџетот на Република Северна Македонија, со кои што располага Трезорот на Министерството за финансии."
+      },
+      "link": "https://open.finance.gov.mk/mk/home"
+    },
+    {
+      "id": 3,
+      "title":{
+        "en" : "Open finance",
+        "mk" : "Отворени финансии"
+      },
+      "description": {
+        "en" : "The \"Open Finances\" portal also contains data on the amount and structure of the public debt. The public debt represents a set of financial obligations created by the borrowing of the central government, the municipalities and the debt of the public enterprises and commercial companies in the dominant ownership of the state or the municipalities.",
+        "mk" : "Во рамките на порталот „Отворени финансии“ се содржани и податоци за висината и структурата на јавниот долг. Јавниот долг претставува збир на финансиски обврски создадени со задолжување на централната влада, општините и долгот на јавните претпријатија и трговските друштва во доминантна сопственост на државата или општините."
+      },
+      "link": "https://javendolg.finance.gov.mk/"
+    },
+    {
+      "id": 4,
+      "title":{
+        "en" : "Capital expenditure",
+        "mk" : "Капитални расходи"
+      },
+      "description": {
+        "en" : "Capital expenditures or capital investments are the expenditures of budget users intended for durable goods such as roads, schools, hospitals, water pipes, student dormitories, sports facilities, health equipment, etc. Their implementation is important because they create better services for citizens and contribute to the development of the economy.\nMonitor the realization of each institution's capital expenditures – realized in relation to what was planned in the Budget.",
+        "mk" : "Капиталните расходи или капитални инвестиции, се расходите на буџетските корисници наменети за трајни добра како патишта, училишта, болници, водоводи, студентски домови, спортски објекти, апарати за здравството итн. Нивната реализација е важна бидејќи креираат подобри услуги за граѓаните и придонесуваат за развој на економијата.\nСледете ја  реализацијата на капиталните расходи на секоја институција – реализирано во однос на планирано во Буџетот."
+      },
+      "link": ""
+    }
+  ],
+  "reforms": [
+    {
+      "id": 1,
+      "title":{
+        "en" : "Fiscal strategy 2021-2025",
+        "mk" : "Фискална стратегија 2021-2025"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 2,
+      "title":{
+        "en" : "Public Debt Management Strategy",
+        "mk" : "Стратегија за управување со јавен долг"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 3,
+      "title":{
+        "en" : "Strategy for the reform of the tax system",
+        "mk" : "Стратегија за реформа на даночниот систем"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 4,
+      "title":{
+        "en" : "Management of public finances",
+        "mk" : "Управување со јавните финансии"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 5,
+      "title":{
+        "en" : "Program of economic reforms",
+        "mk" : "Програма на економски реформи"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 6,
+      "title":{
+        "en" : "Action plan to suppress the gray economy",
+        "mk" : "Акциски план за сузбивање на сивата економија"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 7,
+      "title":{
+        "en" : "Transparency and accountability",
+        "mk" : "Транспарентност и отчетност"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title":{
+        "en" : "Buy a house, buy an apartment",
+        "mk" : "Купи куќа, купи стан"
+      },
+      "description": {
+        "en" : "Buy a house, buy an apartment is a government project for subsidizing young people under 35.\n In order to provide support for citizens who do not have their own residence, the\nan easier and cheaper way for them to solve the housing issue - we improved the conditions for a subsidized housing loan.",
+        "mk" : "Купи куќа, купи стан е проект на владата за субвенционирање на млади под 35г. \n Со цел да дадеме поддршка за граѓаните кои немаат сопствено живеалиште, на\nполесен и поевтин начин да го решат станбеното прашање - ги подобривме условите за субвенциониран станбен кредит."
+      },
+      "link": "https://finance.gov.mk/wp-content/uploads/2021/01/Priracnik_Kupi_kukja_kupi_stan_Preview_012.pdf"
+    },
+    {
+      "id": 2,
+      "title":{
+        "en" : "МојДДВ",
+        "mk" : "МојДДВ"
+      },
+      "description": {
+        "en" : "MyDDV - DDV refund - The desktop application will be able to be used by every citizen who is registered with the Public Revenue Authority (UJP) in the e-PDD system.",
+        "mk" : "МојДДВ – Поврат на ДДВ- Десктоп апликацијата ќе може да се користи од страна на секој граѓанин кој е регистриран во Управа за јавни приходи (УЈП) во системот е-ПДД"
+      },
+      "link": "https://play.google.com/store/apps/details?id=mk.accent.vatret&hl=mk"
+    }
+  ],
+  "publications-and-posts": [
+    {
+      "id": 1,
+      "title":{
+        "en" : "Consultations with the public on the draft Program for Economic Reforms 2024-2026\n\n",
+        "mk" : "Консултации со јавноста за нацрт Програмата за економски реформи 2024 – 2026 година\n\n"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 2,
+      "title":{
+        "en" : "PUBLIC CALL for citizens to apply for a subsidized housing loan in the period from June 1 to August 31, 2022",
+        "mk" : "ЈАВЕН ПОВИК за пријавување на граѓани за добивање субвенциониран станбен кредит во периодот од 1-ви јуни до 31-ви август 2022 година"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 3,
+      "title":{
+        "en" : "Program for Economic Reforms 2023 – 2025\n\n",
+        "mk" : "Програма за економски реформи 2023 – 2025 година\n\n"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 4,
+      "title":{
+        "en" : "Program for Economic Reforms 2023 – 2025\n\n",
+        "mk" : "Програма за економски реформи 2023 – 2025 година\n\n"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 5,
+      "title":{
+        "en" : "Monthly Investor Report",
+        "mk" : "Месечен извештај за инвеститори"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 6,
+      "title":{
+        "en" : "Short-term economic trends",
+        "mk" : "Краткорочни економски движења"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 7,
+      "title":{
+        "en" : "Quarterly Economic Report",
+        "mk" : "Квартален економски извештај"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    },
+    {
+      "id": 8,
+      "title":{
+        "en" : "Decisions on non-acceptance of the provisions of the Law on interest write-off and debt reprogramming",
+        "mk" : "Одлуки за неприфаќање на одредбите на Законот за отпис на камати и репрограмирање на долгови"
+      },
+      "description": {
+        "en" : "",
+        "mk" : ""
+      },
+      "link": ""
+    }
+  ],
+  "public-acquisitions": [
+    {
+      "id": 1,
+      "title":{
+        "en" : "Public acquisitions",
+        "mk" : "Јавни набавки"
+      },
+      "description": {
+        "en" : "Public procurement is a key component of the operational framework of the Ministry of Finance of the Republic of North Macedonia. This institution plays a key role in providing the resources and services necessary for the efficient execution of public functions and programs. Through the public procurement system, the ministry ensures that procurement processes adhere to the highest standards of transparency, accountability and efficiency.\n\nThe key aspects of public procurement include the selection of the most suitable offers, providing the best conditions for the use of public funds and protecting the interests of citizens and the business community. The application of standardized procedures and principles of competitiveness contributes to the effective management of the country's financial resources and improves the conditions for investment and infrastructure development.\n\nThe principles of responsible management of public funds, along with ongoing monitoring and evaluation of procurement performance, guarantee citizens that any use of public finances is in the best interest of the state and their collective well-being.",
+        "mk" : "Јавните набавки се клучна компонента на оперативната рамка на Министерството за финансии на Република Северна Македонија. Оваа институција игра клучна улога во обезбедувањето на ресурсите и услугите неопходни за ефикасно извршување на јавните функции и програми. Преку системот за јавни набавки, министерството гарантира дека процесите на набавки се придржуваат до највисоките стандарди на транспарентност, отчетност и ефикасност.\n\nКлучните аспекти на јавните набавки вклучуваат избор на најпогодни понуди, обезбедување најдобри услови за користење на јавните средства и заштита на интересите на граѓаните и бизнис заедницата. Примената на стандардизирани процедури и принципи на конкурентност придонесува за ефективно управување со финансиските ресурси на земјата и ги подобрува условите за инвестиции и развој на инфраструктурата.\n\nПринципите на одговорно управување со јавните средства, заедно со тековниот мониторинг и евалуација на извршувањето на набавките, им гарантираат на граѓаните дека секое користење на јавните финансии е во најдобар интерес на државата и нивната колективна благосостојба."
+      },
+      "link": ""
+    }
+  ],
+  "laws": [
+    {
+      "id": 1,
+      "title":{
+        "en" : "National strategy for personal data",
+        "mk" : "Национална стратегија за лични податоци"
+      },
+      "description": {
+        "en" : "Legal framework and strategy for protection and management of citizens' personal data, including rights and responsibilities.",
+        "mk" : "Законска рамка и стратегија за заштита и управување со личните податоци на граѓаните, вклучувајќи ги правата и одговорностите."
+      },
+      "link": ""
+    },
+    {
+      "id": 2,
+      "title":{
+        "en" : "Law on Public Procurement",
+        "mk" : "Закон за јавни набавки"
+      },
+      "description": {
+        "en" : "Normative decree on procedures and rules for public procurement, with the aim of ensuring transparency and efficiency in spending public funds.",
+        "mk" : "Нормативна уредба за процедурите и правилата за јавните набавки, со цел обезбедување на транспарентност и ефикасност во трошењето на јавните средства.\n"
+      },
+      "link": ""
+    },
+    {
+      "id": 3,
+      "title":{
+        "en" : "Financial Responsibility Act",
+        "mk" : "Закон за финансиска одговорност"
+      },
+      "description": {
+        "en" : "A legal measure for managing the state's financial resources, with a focus on achieving fiscal stability and responsible management.",
+        "mk" : "Законска мерка за управување со финансиските ресурси на државата, со фокус на постигнување на фискална стабилност и одговорно управување."
+      },
+      "link": ""
+    },
+    {
+      "id": 4,
+      "title":{
+        "en" : "Public Debt Law",
+        "mk" : "Закон за јавен долг"
+      },
+      "description": {
+        "en" : "Regulatory frameworks for public debt management, including borrowing mechanisms and government debt control.",
+        "mk" : "Регулативни рамки за управување со јавниот долг, вклучувајќи ги механизмите за задолжување и контролата на долгот на државата."
+      },
+      "link": ""
+    },
+    {
+      "id": 5,
+      "title":{
+        "en" : "Law on Taxes and Obligations",
+        "mk" : "Закон за даноци и обврски"
+      },
+      "description": {
+        "en" : "Legal decree on the tax system, including the rights and obligations of tax payers, as well as measures for the implementation of tax policies.",
+        "mk" : "Законска уредба за системот на даноци, вклучувајќи ги правата и обврските на даночните обвинетици, како и мерките за спроведување на даночните политики."
+      },
+      "link": ""
+    },
+    {
+      "id": 6,
+      "title":{
+        "en" : "Customs Law",
+        "mk" : "Закон за царина"
+      },
+      "description": {
+        "en" : "Regulatory framework for managing customs procedures and mechanisms for control of imported and exported goods, as well as protection of the state's commercial interests.",
+        "mk" : "Регулативна рамка за управување со царинските процедури и механизмите за контрола на внесената и изнесената роба, како и заштита на трговските интереси на државата."
+      },
+      "link": ""
+    }
+  ]
+}

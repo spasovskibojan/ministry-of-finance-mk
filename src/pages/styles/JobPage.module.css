@@ -1,0 +1,185 @@
+/* JobPage.module.css */
+
+.globalDiv {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.backArrowSect {
+    background-color: #fff;
+    padding: 1rem 10rem;
+}
+
+.backArrowSect a {
+    color: #004080;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.backArrowSect a:hover {
+    color: #002c57;
+}
+
+.sectContainer{
+    background-color: #f6f6f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding: 1rem;
+}
+
+.jobDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.jobCard {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.jobType {
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.jobTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.jobLocation {
+    color: #f97316;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.jobLocation p {
+    margin: 0;
+}
+
+.jobDescriptionTitle, .salaryTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #004080;
+}
+
+.jobDescription, .salary {
+    margin-bottom: 1rem;
+}
+
+.companyInfoCard, .manageJobCard {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    margin: 30px;
+}
+
+.companyInfoTitle, .manageJobTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+.companyName {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.companyDescription {
+    margin-bottom: 1rem;
+}
+
+.contactTitle {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.contactDetail {
+    background: #e0e7ff;
+    padding: 0.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.editJobLink, .deleteJobButton {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    padding: 0.75rem 0;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.editJobLink {
+    background-color: #004080;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.editJobLink:hover {
+    background-color: #002c57;
+}
+
+.deleteJobButton {
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.deleteJobButton:hover {
+    background-color: #dc2626;
+}
+
+@media (min-width: 768px) {
+    .jobDetails {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main {
+        flex: 70%;
+    }
+
+    aside {
+        flex: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobCard{
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .jobTitle{
+        font-size: 1.5rem;
+    }
+    .backArrowSect{
+        padding: 1rem;
+    }
+    .companyInfoCard{
+        margin: 0;
+        margin-top: 10px;
+    }
+}

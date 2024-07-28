@@ -1,0 +1,112 @@
+.newsPageSection{
+    width: 55% ;
+    margin: auto;
+}
+.newsPageSection img{
+    width: 200px;
+}
+.newsPageSection h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.heroPhoto{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.overlayText {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.overlayText h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.overlayText p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.HeroSection > p{
+    width: 60%;
+    margin: 30px auto;
+    font-size: 1.2rem;
+}
+
+.NewsDiv .news-item a{
+    text-decoration: none;
+    background-color: #94b9e1;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.NewsDiv .news-item a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.NewsDiv .backLinks a.nplinks{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    background-color: transparent;
+}
+
+.NewsDiv .backLinks a.nplinks:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.NewsDiv .backLinks{
+    text-align: center;
+    background-color: #f5f5f5;
+    width: fit-content;
+    margin: auto;
+    padding: 20px 0;
+    border: 1px solid ;
+    border-radius: 10px;
+}
+
+.NewsDiv .HeroSection > a{
+    width: 60%;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 900px) {
+    .newsPageSection {
+        width: 100%;
+    }
+    .overlayText {
+        width: 100%;
+    }
+    .overlayText h1{
+        font-size: 20px;
+    }
+    .HeroSection p{
+        font-size: 15px;
+        width: 100%;
+        margin: 5px;
+    }
+    .NewsDiv .HeroSection > a{
+        width: 100%;
+        margin: 15px;
+        margin-bottom: 20px;
+    }
+}

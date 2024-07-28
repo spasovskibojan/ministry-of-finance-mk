@@ -1,0 +1,55 @@
+/* JobListings.module.css */
+
+.section {
+    background-color: #f7f7f7;
+    padding: 2.5rem 1rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.jobsMapping{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.AddJobDiv{
+    text-align: center;
+    background-color: #f7f7f7;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+a.AddJobLink {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #004080;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.AddJobLink:hover {
+    background-color: #003060;
+}
+
+@media (max-width: 480px) {
+    .AddJobDiv{
+        padding-top: 0;
+    }
+}

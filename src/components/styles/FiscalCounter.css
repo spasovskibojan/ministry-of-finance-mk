@@ -1,0 +1,73 @@
+.fiscal-counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.fiscal-heading{
+    text-align: center;
+    margin: 20px;
+    color: #46586b;
+    font-variant: all-petite-caps;
+    font-size: xxx-large;
+}
+.counter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 20%; /* Adjust width to fit four items in a row */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loader {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 20px;
+}
+
+.loader-bar {
+    height: 100%;
+    background-color: #94b9e1;
+    border-radius: 5px;
+}
+
+.amount {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #6f8ba9;
+}
+
+.currency, .date {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .counter-item {
+        width: 40%; /* Adjust width to fit two items in a row */
+    }
+    .fiscal-counter{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .counter-item {
+        width: 100%; /* Adjust width to fit one item in a row */
+    }
+}
+
+.counter-item h2{
+    color: #46586b;
+}
+
+.counter-item p:first-of-type{
+    color: #94b9e1;
+}

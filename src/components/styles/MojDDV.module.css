@@ -1,0 +1,140 @@
+*{
+    font-family: Roboto sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background-color: #f7f7f7;
+}
+
+.contentWrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.leftDiv {
+    padding: 80px;
+    border: 2px solid #ddd;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+.largeHeading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.progressBarContainer {
+    margin-bottom: 20px;
+}
+
+.progressBar {
+    width: 70%;
+    height: 5px; /* Make the progress bar a thin line */
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    /*overflow: hidden;*/
+}
+
+.progress {
+    width: 20%;
+    height: 100%;
+    background-color: #94b9e1;
+}
+
+.smallHeading {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.paragraph {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.downloadButton {
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.downloadButton:hover {
+    background-color: #cccccc;
+}
+
+.imagesDiv {
+    position: relative;
+}
+
+.image1 {
+    max-width: 495px;
+    margin-right: 20px;
+    position: relative;
+}
+@media (max-width: 1100px){
+    .contentWrapper{
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        font-size: 15px;
+    }
+    .leftDiv{
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contentWrapper {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .smallHeading{
+        font-size: 25px;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+    }
+    .paragraph{
+        margin-bottom: 15px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    .leftDiv {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .imagesDiv {
+        align-items: center;
+    }
+
+    .image1 {
+        margin: auto;
+        display: block;
+        max-width: 50%; /* Ensure the images are square on smaller screens */
+    }
+
+    .downloadButton{
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .progressBar{
+        width: 100%;
+    }
+}
