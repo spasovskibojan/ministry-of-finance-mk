@@ -21,7 +21,7 @@ function Navbar() {
     useEffect(() => {
         const storedLanguage = localStorage.getItem('language') || 'mk';
         i18n.changeLanguage(storedLanguage);
-    }, [i18n]);
+    }, [i18n])
 
     const handleMouseEnter = (link) => {
         setHoveredLink(link);
