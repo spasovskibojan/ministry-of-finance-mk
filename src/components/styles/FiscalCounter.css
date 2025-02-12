@@ -59,6 +59,9 @@
     .fiscal-heading{
         font-size: 8vw;
     }
+    .amount{
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 480px) {

@@ -199,8 +199,8 @@
         top: 15px;
         left: 50%;
         transform: translateX(-49.75%);
-        min-width: 180px; /* Full width for mobile */
-        z-index: 1010; /* Ensure dropdown is on top */
+        min-width: 180px;
+        z-index: 1010;
     }
 }
 
