@@ -85,6 +85,8 @@
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: #004080;
+    padding-top: 0 !important;
 }
 
 .navbar-bottom {
@@ -108,18 +110,13 @@
     background-color: transparent;
     border: none;
     font-size: 20px;
+    color: #004080;
 }
 
 .language-switcher button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-}
-
-.language-switcher button:hover {
-    padding: 5px !important;
-    padding-bottom: 3.55px !important;
-    background-color: #82a1c2;
 }
 
 .signInLink {
@@ -163,7 +160,7 @@
 
     .nav-links.active {
         display: flex;
-        width: fit-content;
+        width: 180px;
         padding-top: 10px;
         padding-bottom: 5px;
     }
@@ -180,10 +177,7 @@
         width: fit-content;
         margin-left: 0;
         gap: 0;
-    }
-
-    .menu-icon {
-        display: block;
+        align-items: center;
     }
 
     .navbar-top {
@@ -215,7 +209,7 @@
     }
 
     .nav-links {
-        top: 73px;
+        top: 71px;
     }
 
     .firstMinistryLink {
@@ -227,7 +221,8 @@
     }
 
     .language-switcher button {
-        padding: 2px;
+        padding: 0 2px;
+        height: 15px;
     }
 
     .signInLink {
@@ -239,7 +234,6 @@
     display: flex !important;
 }
 
-/* New CSS for user-details and signInLogoutPart */
 .user-details {
     position: absolute;
     top: 100%;

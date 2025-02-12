@@ -40,11 +40,11 @@
 }
 
 .buttonContainer button:first-of-type {
-    background-color: #007bff; /* Blue color for "Sign In" */
+    background-color: #007bff;
 }
 
 .buttonContainer button:nth-of-type(2) {
-    background-color: #28a745; /* Green color for "Register" */
+    background-color: #28a745;
 }
 
 .signInDiv button {

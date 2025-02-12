@@ -22,10 +22,10 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
-    border-radius: 10px;
-    width: 65%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .image-thumbnail {
@@ -150,13 +150,12 @@
     }
 
     .overlay-text {
-        width: 80%;
         font-size: 13px;
     }
 
     .rightSection {
         width: 100%;
-        padding: 10px 30px;
+        padding: 10px 20px;
         box-sizing: border-box;
         background-color: #f7f7f7;
         max-height: 300px;

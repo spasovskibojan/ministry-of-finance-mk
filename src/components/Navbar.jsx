@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Logo from '../assets/images/Logo.png';
 import './styles/Navbar.css';
 import macedonianFlag from '../assets/images/macedonian-flag.png';
@@ -6,7 +6,7 @@ import englishFlag from '../assets/images/english-flag.png';
 import {Link, NavLink, useNavigate} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faBuilding, faCogs, faNewspaper, faBook, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faBuilding, faCogs, faNewspaper, faBook, faChevronDown, faChevronUp, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from "react-i18next";
 import { auth } from "../config/firebase.js";
 import {signOut} from "firebase/auth";
@@ -33,10 +33,14 @@ function Navbar() {
 
     const toggleButtonClick = () => {
         setIsMenuOpen(!isMenuOpen);
+        setActiveDropdown(false);
     };
 
     const toggleDropdown = (menu) => {
-        setActiveDropdown(activeDropdown === menu ? null : menu);
+        console.log("Toggling dropdown for:", menu);
+        console.log("Current activeDropdown:", activeDropdown);
+
+        setActiveDropdown((activeDropdown === menu) ? null : menu);
     };
 
     const changeLanguage = (lng) => {
@@ -53,11 +57,6 @@ function Navbar() {
             console.error(err);
         }
     };
-
-    const linkStyle = ({ isActive }) => ({
-        backgroundColor: isActive ? '#004080' : 'transparent',
-        color: isActive ? 'white' : '#004080'
-    });
 
     const navItems = [
         {
@@ -113,6 +112,20 @@ function Navbar() {
 
     const user = auth?.currentUser?.email;
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isMenuOpen && !event.target.closest('.nav-links') && !event.target.closest('.menu-icon')) {
+                setIsMenuOpen(false);
+                setActiveDropdown(null);
+            }
+        };
+
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [isMenuOpen]);
+
     return (
         <nav className="navbar" id="top">
             <div className="navbar-bottom">
@@ -128,22 +141,22 @@ function Navbar() {
             </div>
 
             <div className="navbar-top">
-                <NavLink to='/'><img src={Logo} alt="Ministry Logo" className="logo" /></NavLink>
+                <NavLink to='/'><img src={Logo} alt="Ministry Logo" className="logo"/></NavLink>
                 <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     {navItems.map((item, index) => (
                         <div key={index} className="nav-item" onMouseEnter={() => handleMouseEnter(item.key)} onMouseLeave={handleMouseLeave}>
-                            <NavLink to={item.path} style={linkStyle}>
-                                <FontAwesomeIcon className="navlinkIcon" icon={item.icon} aria-hidden="true" /> {item.name}
+                            <NavLink to={item.path} onClick={()=>{setIsMenuOpen(false)}}>
+                                <FontAwesomeIcon className="navlinkIcon" icon={item.icon} aria-hidden="true"/> {item.name}
                             </NavLink>
                             {item.subItems && (
                                 <>
                                     <span className="moreOptions" onClick={() => toggleDropdown(item.key)}>
-                                        <FontAwesomeIcon icon={faChevronDown} />
+                                        <FontAwesomeIcon icon={activeDropdown === item.key ? faChevronUp : faChevronDown} />
                                     </span>
                                     {(hoveredLink === item.key || activeDropdown === item.key) && (
                                         <div className={`dropdown-menu ${activeDropdown === item.key ? 'dropActive' : ''}`}>
                                             {item.subItems.map((subItem, subIndex) => (
-                                                <Link key={subIndex} to={subItem.path}>{subItem.name}</Link>
+                                                <Link key={subIndex} to={subItem.path} onClick={()=>{setIsMenuOpen(false)}}>{subItem.name}</Link>
                                             ))}
                                         </div>
                                     )}
@@ -153,7 +166,7 @@ function Navbar() {
                     ))}
                 </div>
                 <div className="menu-icon">
-                    <button onClick={toggleButtonClick}>&#9776;</button>
+                    <button onClick={toggleButtonClick}><FontAwesomeIcon icon={faBars}/></button>
                 </div>
                 <div className="language-switcher">
                     <button onClick={() => changeLanguage('mk')} className={i18n.language === 'mk' ? 'selected' : ''}>
@@ -170,7 +183,7 @@ function Navbar() {
                     >
                         {user  ?
                             (
-                                <Link className={'signInLink'}>{user.slice(0, 14)}..</Link>
+                                <Link className={'signInLink'}>{user.slice(0, 8)}..</Link>
                             ) :
                             (
                                 <Link className={'signInLink'} to={'/sign-in'}>{t('signInPart.signIn')}</Link>
