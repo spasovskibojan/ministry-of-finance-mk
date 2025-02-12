@@ -37,11 +37,9 @@ function Navbar() {
     };
 
     const toggleDropdown = (menu) => {
-        console.log("Toggling dropdown for:", menu);
-        console.log("Current activeDropdown:", activeDropdown);
-
-        setActiveDropdown((activeDropdown === menu) ? null : menu);
+        setActiveDropdown((prevDropdown) => prevDropdown === menu ? null : menu);
     };
+
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);

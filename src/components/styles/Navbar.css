@@ -53,9 +53,10 @@
     background-color: white;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    display: flex;
+    /*display: flex;*/
+    display: none;
     flex-direction: column;
-    min-width: 200px;
+    min-width: 100px;
     margin-top: 10px;
 }
 
@@ -166,7 +167,8 @@
     }
 
     .nav-links.active .nav-item .moreOptions {
-        display: inline;
+        /*display: inline;*/
+        display: inline-block;
     }
 
     .nav-item {
@@ -191,6 +193,14 @@
 
     .social-link {
         font-size: 20px;
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        /*width: 100%; !* Full width for mobile *!*/
+        z-index: 1010; /* Ensure dropdown is on top */
     }
 }
 
