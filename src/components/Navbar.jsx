@@ -201,17 +201,17 @@
 // }
 //
 // export default Navbar;
-import { React, useState, useEffect } from 'react';
+import {React, useState, useEffect} from 'react';
 import Logo from '../assets/images/Logo.png';
 import './styles/Navbar.css';
 import macedonianFlag from '../assets/images/macedonian-flag.png';
 import englishFlag from '../assets/images/english-flag.png';
 import {Link, NavLink, useNavigate} from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faBuilding, faCogs, faNewspaper, faBook, faChevronDown, faChevronUp, faBars } from '@fortawesome/free-solid-svg-icons';
-import { useTranslation } from "react-i18next";
-import { auth } from "../config/firebase.js";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faFacebook, faInstagram, faXTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope, faBuilding,faCogs,faNewspaper,faBook,faChevronDown, faChevronUp, faBars} from '@fortawesome/free-solid-svg-icons';
+import {useTranslation} from "react-i18next";
+import {auth} from "../config/firebase.js";
 import {signOut} from "firebase/auth";
 
 function Navbar() {
@@ -219,7 +219,7 @@ function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [hoveredUser, setHoveredUser] = useState(false);
-    const { i18n, t } = useTranslation();
+    const {i18n, t} = useTranslation();
 
     useEffect(() => {
         const storedLanguage = localStorage.getItem('language') || 'mk';
@@ -274,8 +274,8 @@ function Navbar() {
             path: '/ministry',
             icon: faBuilding,
             subItems: [
-                { name: t('nav.subItems.minister'), path: '/ministry/minister-of-finance' },
-                { name: t('nav.subItems.deputyMinister'), path: '/ministry/deputy-minister' }
+                {name: t('nav.subItems.minister'), path: '/ministry/minister-of-finance'},
+                {name: t('nav.subItems.deputyMinister'), path: '/ministry/deputy-minister'}
             ]
         },
         {
@@ -290,12 +290,12 @@ function Navbar() {
             path: '/resources',
             icon: faBook,
             subItems: [
-                { name: t('nav.subItems.statistics'), path: '/resources/statistics' },
-                { name: t('nav.subItems.reforms'), path: '/resources/reforms' },
-                { name: t('nav.subItems.projects'), path: '/resources/projects' },
-                { name: t('nav.subItems.publicationsAndPosts'), path: '/resources/publications-and-posts' },
-                { name: t('nav.subItems.publicAcquisitions'), path: '/resources/public-acquisitions' },
-                { name: t('nav.subItems.laws'), path: '/resources/laws' }
+                {name: t('nav.subItems.statistics'), path: '/resources/statistics'},
+                {name: t('nav.subItems.reforms'), path: '/resources/reforms'},
+                {name: t('nav.subItems.projects'), path: '/resources/projects'},
+                {name: t('nav.subItems.publicationsAndPosts'), path: '/resources/publications-and-posts'},
+                {name: t('nav.subItems.publicAcquisitions'), path: '/resources/public-acquisitions'},
+                {name: t('nav.subItems.laws'), path: '/resources/laws'}
             ]
         },
         {
@@ -304,8 +304,8 @@ function Navbar() {
             path: '/services',
             icon: faCogs,
             subItems: [
-                { name: t('nav.subItems.jobs'), path: '/services/jobs' },
-                { name: t('servicesPage.otherServices'), path: '/services/e-services' },
+                {name: t('nav.subItems.jobs'), path: '/services/jobs'},
+                {name: t('servicesPage.otherServices'), path: '/services/e-services'},
             ]
         },
         {
@@ -314,7 +314,7 @@ function Navbar() {
             path: '/contact',
             icon: faEnvelope,
             subItems: [
-                { name: t('nav.subItems.team'), path: '/contact/team' }
+                {name: t('nav.subItems.team'), path: '/contact/team'}
             ]
         }
     ];
@@ -339,13 +339,13 @@ function Navbar() {
         <nav className="navbar" id="top">
             <div className="navbar-bottom">
                 <Link to="https://www.facebook.com/MinistryOfFinanceMK" className="social-link" target="_blank">
-                    <FontAwesomeIcon icon={faFacebook} />
+                    <FontAwesomeIcon icon={faFacebook}/>
                 </Link>
                 <Link to="https://x.com/MOF_MKD" className="social-link" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faXTwitter}/>
                 </Link>
                 <Link to="https://www.instagram.com/mf_mkd/" className="social-link" target="_blank">
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faInstagram}/>
                 </Link>
             </div>
 
@@ -361,18 +361,25 @@ function Navbar() {
                             onTouchStart={() => handleTouchStart(item.key)}
                             onTouchEnd={handleTouchEnd}
                         >
-                            <NavLink to={item.path} onClick={()=>{setIsMenuOpen(false)}}>
-                                <FontAwesomeIcon className="navlinkIcon" icon={item.icon} aria-hidden="true"/> {item.name}
+                            <NavLink to={item.path} onClick={() => {
+                                setIsMenuOpen(false)
+                            }}>
+                                <FontAwesomeIcon className="navlinkIcon" icon={item.icon}
+                                                 aria-hidden="true"/> {item.name}
                             </NavLink>
                             {item.subItems && (
                                 <>
                                     <span className="moreOptions" onClick={() => toggleDropdown(item.key)}>
-                                        <FontAwesomeIcon icon={activeDropdown === item.key ? faChevronUp : faChevronDown} />
+                                        <FontAwesomeIcon
+                                            icon={activeDropdown === item.key ? faChevronUp : faChevronDown}/>
                                     </span>
                                     {(hoveredLink === item.key || activeDropdown === item.key) && (
-                                        <div className={`dropdown-menu ${activeDropdown === item.key ? 'dropActive' : ''}`}>
+                                        <div
+                                            className={`dropdown-menu ${activeDropdown === item.key ? 'dropActive' : ''}`}>
                                             {item.subItems.map((subItem, subIndex) => (
-                                                <Link key={subIndex} to={subItem.path} onClick={()=>{setIsMenuOpen(false)}}>{subItem.name}</Link>
+                                                <Link key={subIndex} to={subItem.path} onClick={() => {
+                                                    setIsMenuOpen(false)
+                                                }}>{subItem.name}</Link>
                                             ))}
                                         </div>
                                     )}
@@ -386,10 +393,10 @@ function Navbar() {
                 </div>
                 <div className="language-switcher">
                     <button onClick={() => changeLanguage('mk')} className={i18n.language === 'mk' ? 'selected' : ''}>
-                        <img src={macedonianFlag} alt="Macedonian Flag" className="flag" width="20px" />
+                        <img src={macedonianFlag} alt="Macedonian Flag" className="flag" width="20px"/>
                     </button>
                     <button onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? 'selected' : ''}>
-                        <img src={englishFlag} alt="English Flag" className="flag" width="20px" />
+                        <img src={englishFlag} alt="English Flag" className="flag" width="20px"/>
                     </button>
 
                     <span
@@ -397,12 +404,12 @@ function Navbar() {
                         onMouseEnter={() => setHoveredUser(true)}
                         onMouseLeave={() => setHoveredUser(false)}
                     >
-                        {user  ? (
+                        {user ? (
                             <Link className={'signInLink'}>{user.slice(0, 8)}..</Link>
                         ) : (
                             <Link className={'signInLink'} to={'/sign-in'}>{t('signInPart.signIn')}</Link>
                         )}
-                        { hoveredUser && user && (
+                        {hoveredUser && user && (
                             <div className="user-details">
                                 <p>{user}</p>
                                 <button onClick={logout}>{t('signInPart.signOut')}</button>
