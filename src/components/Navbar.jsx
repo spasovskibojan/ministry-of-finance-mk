@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { React, useState, useEffect } from 'react';
 import Logo from '../assets/images/Logo.png';
 import './styles/Navbar.css';
 import macedonianFlag from '../assets/images/macedonian-flag.png';
