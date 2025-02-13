@@ -198,9 +198,12 @@
         position: absolute;
         top: 15px;
         left: 50%;
-        transform: translateX(-49.75%);
+        transform: translateX(-50%);
         min-width: 180px;
         z-index: 1010;
+    }
+    .dropActive {
+        display: flex !important;
     }
 }
 
@@ -238,6 +241,10 @@
     .signInLink {
         font-size: 12px;
     }
+
+    .user-details{
+        font-size: smaller;
+    }
 }
 
 .dropActive {
@@ -246,20 +253,19 @@
 
 .user-details {
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 120%;
     transform: translateX(-50%);
     background-color: white;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     display: none;
 }
 
 .user-details p {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     color: #004080;
 }
 
@@ -267,7 +273,7 @@
     border: none;
     background-color: #004080;
     color: white;
-    padding: 5px 10px;
+    padding: 0 5px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -297,4 +303,13 @@
 .signInLogoutPart a:hover {
     color: #002c57;
     background-color: #f7f7f7;
+}
+
+@media (min-width: 861px) {
+    .nav-item:hover .dropdown-menu {
+        display: flex;
+    }
+    .dropActive {
+        display: flex;
+    }
 }

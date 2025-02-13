@@ -50,7 +50,7 @@
 
 @media (max-width: 768px) {
     .counter-item {
-        width: 40%; /* Adjust width to fit two items in a row */
+        width: 40%;
     }
     .fiscal-counter{
         width: 100%;
