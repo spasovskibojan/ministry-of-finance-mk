@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp} from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import {useEffect, useState} from "react";
 const Footer = () => {
     const scrollToTop = (event) => {
         event.preventDefault();
@@ -15,17 +16,28 @@ const Footer = () => {
     const handleLinkClick = () => {
         window.scrollTo(0, 0);
     };
+    const [arrowUpShow, setArrowUpShow] = useState(window.scrollY > 200)
+    useEffect(() => {
+        const handleScroll = () => {
+            setArrowUpShow(window.scrollY > 800);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const {t} = useTranslation()
     return (
         <>
-                <div className={styles.arrowUpDiv}>
-                    <Link to="#top" onClick={scrollToTop} className={styles.goUp}>
-                        <FontAwesomeIcon icon={faChevronUp} className={`${styles.icon} fa-2x`} />
-                    </Link>
-                </div>
+            <div className={styles.arrowUpDiv} style={{display: arrowUpShow ? 'flex' : 'none'}}>
+                <Link to="#top" onClick={scrollToTop} className={styles.goUp}>
+                    <FontAwesomeIcon icon={faChevronUp} className={`${styles.icon} fa-2x`}/>
+                </Link>
+            </div>
+
             <footer className={styles.footer}>
                 <div className={styles.logoContainer}>
-                    <Link to="#top" onClick={scrollToTop}><img src={ministryLogo} alt="Ministry Logo" className={styles.logo}/></Link>
+                    <Link to="#top" onClick={scrollToTop}><img src={ministryLogo} alt="Ministry Logo"
+                                                               className={styles.logo}/></Link>
                 </div>
                 <div className={styles.infoContainer}>
                     <div className={styles.column}>

@@ -64,18 +64,21 @@ li {
 }
 
 .icon {
-    color: black;
+    color: white;
 }
 
 .arrowUpDiv {
-    display: flex;
+    /*display: flex;*/
+    display: none;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     z-index: 1000;
+    background-color: #2b5073 ;
+    border-radius: 50%;
 }
 
 .goUp {
@@ -83,12 +86,13 @@ li {
     cursor: pointer;
     transition: transform 0.3s;
     display: flex;
+    /*display: none;*/
     justify-content: center;
     align-items: center;
 }
 
 .goUp:hover {
-    transform: translateY(-5px);
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
