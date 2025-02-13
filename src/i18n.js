@@ -335,7 +335,7 @@ i18n.use(LangaugeDetector).use(initReactI18next).init({
                     otherNewsTitle: "Вести",
                     viewAllNews: "сите вести",
                     newsPageTitle:"Добредојде на страната за Вести",
-                    newsPageSubtitle:"Истражете ги најновите вести и новости.",
+                    newsPageSubtitle:"Бидете во тек со најновите вести и новости.",
                 },
                 fiscalCounter: {
                     head1: "Фискален бројач",
